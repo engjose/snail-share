@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.snail.snailshare.SplashActivity">
+    android:background="#5bc8be"
+    tools:context="com.snail.snailshare.splash.SplashActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <me.wangyuwei.particleview.ParticleView
+        android:id="@+id/particle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        pv:pv_background_color="#88000000"
+        pv:pv_host_text="snail"
+        pv:pv_host_text_anim_time="2000"
+        pv:pv_host_text_size="50sp"
+        pv:pv_particle_text=".share"
+        pv:pv_particle_text_size="20sp"
+        pv:pv_spread_anim_time="2000"
+        pv:pv_text_anim_time="2000"
+        pv:pv_text_color="#ffffff" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
