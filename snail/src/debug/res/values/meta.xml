@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--环境定义参见Environment类-->
+    <string name="meta_env">102</string>
+
+</resources>
