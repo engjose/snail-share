@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Window.DialogAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="CustomDialogButtonNegative">
+        <item name="android:textColor">@color/color999999</item>
+        <item name="android:textSize">@dimen/SP_12</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/PX_10</item>
+    </style>
+
+    <style name="CustomDialogButton">
+        <item name="android:textColor">@color/colorff553a</item>
+        <item name="android:textSize">@dimen/SP_12</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/PX_10</item>
+    </style>
+</resources>

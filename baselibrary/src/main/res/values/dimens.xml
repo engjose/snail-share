@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="PX_30">30dp</dimen>
+    <dimen name="PX_20">20dp</dimen>
+    <dimen name="PX_4">4dp</dimen>
+    <dimen name="PX_14">14dp</dimen>
+    <dimen name="PX_60">60dp</dimen>
+
+    <dimen name="PX_32">32dp</dimen>
+    <dimen name="PX_10">10dp</dimen>
+    <dimen name="PX_25">25dp</dimen>
+    <dimen name="PX_5">5dp</dimen>
+    <dimen name="PX_12">12dp</dimen>
+
+    <dimen name="PX_6">6dp</dimen>
+    <dimen name="PX_7">7dp</dimen>
+    <dimen name="PX_8">8dp</dimen>
+    <dimen name="PX_40">40dp</dimen>
+    <dimen name="PX_80">80dp</dimen>
+    <dimen name="PX_253">253dp</dimen>
+
+    <dimen name="PX_33">33dp</dimen>
+    <dimen name="PX_35">35dp</dimen>
+    <dimen name="PX_38">38dp</dimen>
+    <dimen name="PX_28">28dp</dimen>
+    <dimen name="PX_67">67dp</dimen>
+
+
+    <dimen name="SP_16">16sp</dimen>
+    <dimen name="SP_12">12sp</dimen>
+    <dimen name="SP_14">14sp</dimen>
+
+    <dimen name="ttlm_default_padding">20dip</dimen>
+    <dimen name="ttlm_default_corner_radius">4dip</dimen>
+    <dimen name="ttlm_default_stroke_weight">0dip</dimen>
+    <dimen name="ttlm_default_elevation">2dp</dimen>
+</resources>

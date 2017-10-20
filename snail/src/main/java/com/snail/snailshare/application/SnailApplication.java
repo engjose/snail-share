@@ -2,6 +2,7 @@ package com.snail.snailshare.application;
 
 import android.app.Application;
 
+import com.snail.baselibrary.base.GlobalCache;
 import com.snail.baselibrary.config.Config;
 import com.snail.snailshare.R;
 
@@ -14,5 +15,6 @@ public class SnailApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Config.changeEnv(Integer.parseInt(getString(R.string.meta_env)));
+        GlobalCache.getInstance().registerContext(getApplicationContext());
     }
 }
