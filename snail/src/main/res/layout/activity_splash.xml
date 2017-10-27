@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5bc8be"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.snail.snailshare.splash.SplashActivity">
 
     <me.wangyuwei.particleview.ParticleView
@@ -13,12 +13,12 @@
         android:layout_height="match_parent"
         pv:pv_background_color="#88000000"
         pv:pv_host_text="snail"
-        pv:pv_host_text_anim_time="2000"
+        pv:pv_host_text_anim_time="1000"
         pv:pv_host_text_size="50sp"
-        pv:pv_particle_text=".share"
+        pv:pv_particle_text="share"
         pv:pv_particle_text_size="20sp"
-        pv:pv_spread_anim_time="2000"
-        pv:pv_text_anim_time="2000"
+        pv:pv_spread_anim_time="1000"
+        pv:pv_text_anim_time="1500"
         pv:pv_text_color="#ffffff" />
 
 </RelativeLayout>

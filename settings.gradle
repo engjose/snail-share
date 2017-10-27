@@ -1,1 +1,1 @@
-include ':snail', ':baselibrary'
+include ':snail', ':baselibrary', ':article'

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="#ffbbff"
+        icon="@drawable/order_handle_select"
+        id="@+id/tab_home"
+        title="首页" />
+    <tab
+        barColorWhenSelected="#aa00ff"
+        icon="@drawable/order_search_select"
+        id="@+id/tab_friend_circle"
+        title="朋友圈" />
+    <tab
+        barColorWhenSelected="#aaff00"
+        icon="@drawable/order_search_select"
+        id="@+id/tab_chat"
+        title="私信" />
+    <tab
+        barColorWhenSelected="#ffff00"
+        icon="@drawable/setting_select"
+        id="@+id/tab_person_center"
+        title="个人中心" />
+    <!--<tab-->
+    <!--id="@+id/tab_recents"-->
+    <!--title="Recents"-->
+    <!--icon="@drawable/empty_icon"-->
+    <!--inActiveColor="#00FF00"-->
+    <!--activeColor="#FF0000"-->
+    <!--barColorWhenSelected="#FF0000"-->
+    <!--badgeBackgroundColor="#FF0000"-->
+    <!--badgeHidesWhenActive="true" />-->
+</tabs>

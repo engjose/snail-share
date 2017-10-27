@@ -1,18 +1,7 @@
 apply plugin: 'com.android.library'
+apply from: '../globalConfig.gradle'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
-
-    defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-    }
     buildTypes {
         release {
             minifyEnabled false
@@ -23,10 +12,24 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestCompile(rootProject.ext.dependencies["espresso-core"], {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.+'
-    testCompile 'junit:junit:4.12'
-    compile 'me.wangyuwei:ParticleView:1.0.4'
+    testCompile rootProject.ext.dependencies["junit"]
+
+    compile rootProject.ext.dependencies["particleview"]
+    compile rootProject.ext.dependencies["bottom-bar"]
+    compile rootProject.ext.dependencies["banner"]
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["AVLoadingIndicatorView"]
+    compile rootProject.ext.dependencies["baserecyclerview-adapter"]
+    compile rootProject.ext.dependencies["retrofit"]
+    compile rootProject.ext.dependencies["retrofit-converter-gson"]
+    compile rootProject.ext.dependencies["retrofit-converter-scalars"]
+    compile rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
+    compile rootProject.ext.dependencies["rxandroid2"]
+    compile rootProject.ext.dependencies["okhttp3"]
+    compile rootProject.ext.dependencies["okhttp3-logger"]
+    compile rootProject.ext.dependencies["rxjava2"]
+    compile rootProject.ext.dependencies["rxpermissions2"]
 }
