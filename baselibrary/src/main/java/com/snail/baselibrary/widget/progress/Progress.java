@@ -2,7 +2,6 @@ package com.snail.baselibrary.widget.progress;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Looper;
 import android.support.annotation.NonNull;
@@ -12,12 +11,12 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.snail.baselibrary.R;
 import com.snail.baselibrary.widget.dialog.DialogParamBundle;
-import com.snail.baselibrary.widget.dialog.BaseDialogFragment;
+import com.snail.baselibrary.widget.dialog.ui.BaseDialogFragment;
+import com.wang.avi.AVLoadingIndicatorView;
 
 /**
  * Progress,Floating Progress with various of function
@@ -30,14 +29,14 @@ public class Progress extends BaseDialogFragment {
     }
 
     private TextView tv_loadingText;
-    private ImageView iv_route;
+    private AVLoadingIndicatorView iv_route;
     private View layoutView;
     private static final int CHNAGE_TITLE_DELAYMILLIS = 300;
     private static final int MAX_SUFFIX_NUMBER = 3;
     private static final char SUFFIX = '.';
     private TextView tv_point;
     private String serviceKey = "";
-    private boolean isShowPoint=true;
+    private boolean isShowPoint = true;
 
     @NonNull
     @Override
@@ -59,12 +58,12 @@ public class Progress extends BaseDialogFragment {
         layoutView = inflater.inflate(R.layout.progress_layout, container, false);
         layoutView.setOnClickListener(mSpaceClickListener);
         tv_loadingText = (TextView) layoutView.findViewById(R.id.tip);
-        iv_route = (ImageView) layoutView.findViewById(R.id.iv_rrroute);
+        iv_route = (AVLoadingIndicatorView) layoutView.findViewById(R.id.iv_rrroute);
         tv_point = (TextView) layoutView.findViewById(R.id.tv_point);
         initAnim();
         if (!TextUtils.isEmpty(mContentTxt)) {
             tv_loadingText.setText(mContentTxt);
-            tv_point.setVisibility(isShowPoint?View.VISIBLE:View.GONE);
+            tv_point.setVisibility(isShowPoint ? View.VISIBLE : View.GONE);
         }
        /* View cancel_button = layoutView.findViewById(R.id.btn_cancel);
         if (!mParamBundle.isShowDismissButton) {
@@ -88,7 +87,7 @@ public class Progress extends BaseDialogFragment {
         }
         if (tv_loadingText == null) {
             mContentTxt = str;
-            isShowPoint=false;
+            isShowPoint = false;
             return;
         }
         tv_point.setVisibility(View.GONE);
@@ -117,8 +116,7 @@ public class Progress extends BaseDialogFragment {
     }
 
     private void initAnim() {
-        AnimationDrawable animationDrawable = (AnimationDrawable) iv_route.getDrawable();
-        animationDrawable.start();
+        iv_route.show();
     }
 
     private int num = 0;

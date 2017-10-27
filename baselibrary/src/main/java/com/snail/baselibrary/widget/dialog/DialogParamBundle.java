@@ -3,7 +3,6 @@ package com.snail.baselibrary.widget.dialog;
 import android.support.annotation.StringRes;
 import android.support.v4.app.FragmentManager;
 import android.text.TextUtils;
-
 import com.snail.baselibrary.base.BaseActivity;
 import com.snail.baselibrary.base.BaseFragment;
 import com.snail.baselibrary.base.GlobalCache;
@@ -13,6 +12,7 @@ import java.lang.ref.WeakReference;
 /**
  * DialogParamBundle
  */
+@SuppressWarnings("unused")
 public class DialogParamBundle {
     /**
      * View的key

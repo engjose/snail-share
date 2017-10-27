@@ -2,14 +2,14 @@ package com.snail.snailshare.splash;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+import com.snail.baselibrary.base.BaseActivity;
 import com.snail.snailshare.R;
 import com.snail.snailshare.main.MainActivity;
 
 import me.wangyuwei.particleview.ParticleView;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
 
 
     private ParticleView mParticleView;
@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mParticleView = (ParticleView) findViewById(R.id.particle_view);
+        mParticleView = findViewById(R.id.particle_view);
         mParticleView.startAnim();
         mParticleView.setOnParticleAnimListener(new ParticleView.ParticleAnimListener() {
             @Override

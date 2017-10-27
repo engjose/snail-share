@@ -1,4 +1,4 @@
-package com.snail.baselibrary.widget.dialog;
+package com.snail.baselibrary.widget.dialog.ui;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.snail.baselibrary.R;
+import com.snail.baselibrary.widget.dialog.DialogParamBundle;
 
 import java.lang.reflect.Field;
 

@@ -351,6 +351,32 @@
 -keep class com.morgoo.** { *; }
 -dontwarn com.morgoo.**
 
+#BaseRecyclerViewAdapterHelper
+-keep class com.chad.library.adapter.** { *; }
+-keep public class * extends com.chad.library.adapter.base.BaseQuickAdapter
+-keep public class * extends com.chad.library.adapter.base.BaseViewHolder
+-keepclassmembers  class **$** extends com.chad.library.adapter.base.BaseViewHolder {
+     <init>(...);
+}
+
+# banner 的混淆代码
+-keep class com.youth.banner.** { *; }
+
+# glide 的混淆代码
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+   **[] $VALUES;
+   public *;
+}
+
+#实体类混淆
+-keep class com.snail.baselibrary.base.BaseBean { *; }
+-keep class * extends  com.snail.baselibrary.base.BaseBean { *; }
+
+#AVLoadingIndicatorView
+-keep class com.wang.avi.** { *; }
+-keep class com.wang.avi.indicators.** { *; }
+
 #基线包使用，生成mapping.txt
 -printmapping mapping.txt
 #生成的mapping.txt在app/buidl/outputs/mapping/release路径下，移动到/app路径下
